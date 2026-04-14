@@ -1,59 +1,30 @@
+<!-- =========================
+FILE: index.html
+========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Xavier Strings - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <h1>Xavier Strings</h1>
+    <h1>Xavier Strings 🎸</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="collections.html">Collections</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>Your Sound Starts Here 🎸</h2>
-    <p>Discover quality guitars at Xavier Strings.</p>
-</section>
-
-<footer>
-    <p>© 2026 Xavier Strings</p>
-</footer>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Xavier Strings - Collections</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <h1>Xavier Strings</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="collections.html">Collections</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</header>
-
-<section class="gallery">
-    <h2>Our Guitar Collection</h2>
-
-    <div class="guitars">
-        <img src="guitar1.jpg" alt="Guitar 1">
-        <img src="guitar2.jpg" alt="Guitar 2">
-        <img src="guitar3.jpg" alt="Guitar 3">
+    <div class="hero-content">
+        <h2>Find Your Perfect Sound</h2>
+        <p>Premium guitars crafted for every musician.</p>
+        <a href="collections.html" class="btn">Browse Collection</a>
     </div>
 </section>
 
@@ -65,28 +36,46 @@
 </html>
 
 
+<!-- =========================
+FILE: collections.html
+========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Xavier Strings - Contact</title>
+    <title>Xavier Strings - Collections</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Xavier Strings</h1>
+    <h1>Xavier Strings 🎸</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="collections.html">Collections</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: xavierstrings@email.com</p>
-    <p>Phone: 09123456789</p>
+<section class="gallery">
+    <h2>Our Guitar Collection</h2>
+
+    <div class="guitars">
+        <div class="card">
+            <img src="guitar1.jpg" alt="Guitar 1">
+            <h3>Acoustic Guitar</h3>
+        </div>
+
+        <div class="card">
+            <img src="guitar2.jpg" alt="Guitar 2">
+            <h3>Electric Guitar</h3>
+        </div>
+
+        <div class="card">
+            <img src="guitar3.jpg" alt="Guitar 3">
+            <h3>Bass Guitar</h3>
+        </div>
+    </div>
 </section>
 
 <footer>
@@ -97,62 +86,148 @@
 </html>
 
 
+<!-- =========================
+FILE: contact.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xavier Strings - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Xavier Strings 🎸</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+        <p><strong>Email:</strong> xavierstrings@email.com</p>
+        <p><strong>Phone:</strong> 09123456789</p>
+        <p><strong>Location:</strong> Philippines</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Xavier Strings</p>
+</footer>
+
+</body>
+</html>
+
+
+<!-- =========================
+FILE: style.css
+========================= -->
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    background: #0f0f0f;
+    color: #fff;
 }
 
 header {
-    background-color: #222;
-    color: white;
+    background: rgba(0,0,0,0.8);
     padding: 15px;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
-    color: white;
-    margin: 0 10px;
+    color: #fff;
+    margin: 0 12px;
     text-decoration: none;
+    font-weight: 500;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ff4d6d;
 }
 
 .hero {
-    padding: 60px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background-color: #ddd;
+    background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ff4d6d;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: #ff1e4d;
 }
 
 .gallery {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
-.guitars img {
-    width: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s;
+.guitars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.guitars img:hover {
-    transform: scale(1.1);
+.card {
+    background: #1c1c1c;
+    padding: 15px;
+    border-radius: 15px;
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .contact {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
+.contact-box {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
 footer {
-    background-color: #222;
-    color: white;
+    background: #000;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
 }
